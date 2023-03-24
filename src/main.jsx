@@ -3,14 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./store";
-import { PokemonApp } from "./components/PokemonApp/PokemonApp";
-// import CounterApp from "./components/counter/CounterApp";
+// import {CounterApp} from "./components/counter/CounterApp";
+// import { PokemonApp } from "./components/PokemonApp/PokemonApp";
+import { ToDoApp } from "./components/ToDoApp/ToDoApp";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
       {/* <CounterApp /> */}
-      <PokemonApp />
+      {/* <PokemonApp /> */}
+      <ToDoApp />
     </Provider>
   </React.StrictMode>
 );

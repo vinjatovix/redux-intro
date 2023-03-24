@@ -7,7 +7,7 @@ import {
   decrementByAmount,
 } from "../../store/slices/counter";
 
-function CounterApp() {
+export const CounterApp = () => {
   const { counter } = useSelector((state) => state.counter);
   const dispatch = useDispatch();
 
@@ -28,6 +28,4 @@ function CounterApp() {
       </div>
     </div>
   );
-}
-
-export default CounterApp;
+};
